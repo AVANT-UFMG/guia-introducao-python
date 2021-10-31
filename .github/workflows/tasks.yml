@@ -1,0 +1,283 @@
+# This is a basic workflow to help you get started with Actions
+name: Topicos
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [master, main]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  task-1:
+    if: ${{ contains(github.event.head_commit.message, '#001') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create Issue
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: Hello World
+          content-filepath: .github/content/issues/02-helloworld.md
+
+      - name: Render template
+        id: template
+        uses: chuhlomin/render-template@v1.2
+        with:
+          template: .github/content/closeIssues/01-closed.md
+          vars: |
+            repoUrl: https://github.com/${{github.repository_owner}}/${{ github.event.repository.name }}
+
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: 1
+          body: ${{ steps.template.outputs.result }}
+
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1
+        with:
+          issue-number: 1
+
+  task-2:
+    if: ${{ contains(github.event.head_commit.message, '#002') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create Issue From File
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: Booleanos e Condicionais
+          content-filepath: .github/content/issues/03-boolcondition.md
+
+      - name: Render template
+        id: template
+        uses: chuhlomin/render-template@v1.2
+        with:
+          template: .github/content/closeIssues/02-closed.md
+          vars: |
+            repoUrl: https://github.com/${{github.repository_owner}}/${{ github.event.repository.name }}
+
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: 2
+          body: ${{ steps.template.outputs.result }}
+
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1
+        with:
+          issue-number: 2
+
+  task-3:
+    if: ${{ contains(github.event.head_commit.message, '#003') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create Issue From File
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: Listas
+          content-filepath: .github/content/issues/04-lists.md
+
+      - name: Render template
+        id: template
+        uses: chuhlomin/render-template@v1.2
+        with:
+          template: .github/content/closeIssues/03-closed.md
+          vars: |
+            repoUrl: https://github.com/${{github.repository_owner}}/${{ github.event.repository.name }}
+
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: 3
+          body: ${{ steps.template.outputs.result }}
+
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1
+        with:
+          issue-number: 3
+
+  task-4:
+    if: ${{ contains(github.event.head_commit.message, '#004') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create Issue From File
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: Tuplas
+          content-filepath: .github/content/issues/05-tuples.md
+
+      - name: Render template
+        id: template
+        uses: chuhlomin/render-template@v1.2
+        with:
+          template: .github/content/closeIssues/04-closed.md
+          vars: |
+            repoUrl: https://github.com/${{github.repository_owner}}/${{ github.event.repository.name }}
+
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: 4
+          body: ${{ steps.template.outputs.result }}
+
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1
+        with:
+          issue-number: 4
+
+  task-5:
+    if: ${{ contains(github.event.head_commit.message, '#005') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create Issue From File
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: Strings
+          content-filepath: .github/content/issues/06-strings.md
+
+      - name: Render template
+        id: template
+        uses: chuhlomin/render-template@v1.2
+        with:
+          template: .github/content/closeIssues/05-closed.md
+          vars: |
+            repoUrl: https://github.com/${{github.repository_owner}}/${{ github.event.repository.name }}
+
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: 5
+          body: ${{ steps.template.outputs.result }}
+
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1
+        with:
+          issue-number: 5
+
+  task-6:
+    if: ${{ contains(github.event.head_commit.message, '#006') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create Issue From File
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: Bibliotecas
+          content-filepath: .github/content/issues/07-library.md
+
+      - name: Render template
+        id: template
+        uses: chuhlomin/render-template@v1.2
+        with:
+          template: .github/content/closeIssues/06-closed.md
+          vars: |
+            repoUrl: https://github.com/${{github.repository_owner}}/${{ github.event.repository.name }}
+
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: 6
+          body: ${{ steps.template.outputs.result }}
+
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1
+        with:
+          issue-number: 6
+
+  task-7:
+    if: ${{ contains(github.event.head_commit.message, '#007') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Arquivos
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: Exercicio 2
+          content-filepath: .github/content/issues/08-file.md
+
+      - name: Render template
+        id: template
+        uses: chuhlomin/render-template@v1.2
+        with:
+          template: .github/content/closeIssues/07-closed.md
+          vars: |
+            repoUrl: https://github.com/${{github.repository_owner}}/${{ github.event.repository.name }}
+
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: 7
+          body: ${{ steps.template.outputs.result }}
+
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1
+        with:
+          issue-number: 7
+
+  task-8:
+    if: ${{ contains(github.event.head_commit.message, '#008') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Desafio Final
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: Desafio Final
+          content-filepath: .github/content/issues/09-challenge.md
+
+      - name: Render template
+        id: template
+        uses: chuhlomin/render-template@v1.2
+        with:
+          template: .github/content/closeIssues/08-closed.md
+          vars: |
+            repoUrl: https://github.com/${{github.repository_owner}}/${{ github.event.repository.name }}
+
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: 8
+          body: ${{ steps.template.outputs.result }}
+
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1
+        with:
+          issue-number: 8
+
+  completed:
+    if: ${{ contains(github.event.head_commit.message, '#009') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Render template
+        id: template
+        uses: chuhlomin/render-template@v1.2
+        with:
+          template: .github/content/closeIssues/09-closed.md
+          vars: |
+            repoUrl: https://github.com/${{github.repository_owner}}/${{ github.event.repository.name }}
+
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: 9
+          body: ${{ steps.template.outputs.result }}
+
+      - name: Close Issue
+        uses: peter-evans/close-issue@v1
+        with:
+          issue-number: 9

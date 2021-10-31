@@ -1,0 +1,1 @@
+# Escreva uma função que receba um numero pelo entrada e retorna se aquele numero é primo ou não 
