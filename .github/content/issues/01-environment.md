@@ -39,9 +39,9 @@ Se a versão do Git for exibida, você está pronto para prosseguir. Caso contr�
 
 Para finalizar a etapa de configuração de ambiente, clone o repositório para seu ambiente local, onde será realizado o guia:
 
-`git clone {{ repoUrl }}.git`
+`git clone {{ .repoUrl }}.git`
 
-Você também pode baixar ou clonar o repo via SSH [main repo page]({{ repoUrl }}).
+Você também pode baixar ou clonar o repo via SSH [main repo page]({{ .repoUrl }}).
 
 - [ ] O repositório já está na minha máquina
 
