@@ -39,9 +39,9 @@ Se a versão do Git for exibida, você está pronto para prosseguir. Caso contr�
 
 Para finalizar a etapa de configuração de ambiente, clone o repositório para seu ambiente local, onde será realizado o guia:
 
-`git clone {{ .repoUrl }}.git`
+`git clone https://github.com/{{ InserirNomeUsuarioGithub }}/guia-introducao-python.git`
 
-Você também pode baixar ou clonar o repo via SSH no [repositorio]({{ .repoUrl }}/).
+Você também pode baixar ou clonar o repo via SSH na pagina inicial do repositório.
 
 - [ ] O repositório já está na minha máquina
 
@@ -52,7 +52,7 @@ Você também pode baixar ou clonar o repo via SSH no [repositorio]({{ .repoUrl 
 <img src="https://i.giphy.com/media/xT39Db8zIOODTppk08/giphy.webp" width="350" height="350" />
 
 Com seu ambiente de programação configurado, vamos começar.
-Para continuarmos, execute no terminal, dentro do repositorio do projeto, os seguintes comandos:
+Para continuarmos, execute no terminal, dentro do repositório do projeto, os seguintes comandos:
 
 1. Commitar as mudanças:
 
