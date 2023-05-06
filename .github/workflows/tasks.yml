@@ -12,6 +12,7 @@ jobs:
   task-1:
     if: ${{ contains(github.event.head_commit.message, '#001') }}
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
 
@@ -43,6 +44,7 @@ jobs:
   task-2:
     if: ${{ contains(github.event.head_commit.message, '#002') }}
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
 
@@ -74,6 +76,7 @@ jobs:
   task-3:
     if: ${{ contains(github.event.head_commit.message, '#003') }}
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
 
@@ -105,6 +108,7 @@ jobs:
   task-4:
     if: ${{ contains(github.event.head_commit.message, '#004') }}
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
 
@@ -136,6 +140,7 @@ jobs:
   task-5:
     if: ${{ contains(github.event.head_commit.message, '#005') }}
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
 
@@ -167,6 +172,7 @@ jobs:
   task-6:
     if: ${{ contains(github.event.head_commit.message, '#006') }}
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
 
@@ -198,6 +204,7 @@ jobs:
   task-7:
     if: ${{ contains(github.event.head_commit.message, '#007') }}
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
 
@@ -229,6 +236,7 @@ jobs:
   task-8:
     if: ${{ contains(github.event.head_commit.message, '#008') }}
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
 
@@ -260,6 +268,7 @@ jobs:
   completed:
     if: ${{ contains(github.event.head_commit.message, '#009') }}
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
 
