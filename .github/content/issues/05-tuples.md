@@ -10,7 +10,7 @@ Aprender o que são Tuplas e sua diferença com a estrutura de listas
 
 ### 1- Tuplas
 
-- [ ] [**Pense Python - Tuplas**](https://penseallen.github.io/PensePython2e/12-tuplas.html)
+- [ ] Apresentação: [**Pense Python - Tuplas**](https://penseallen.github.io/PensePython2e/12-tuplas.html)
 
   Leitura até capítulo 12.5 aonde será abordado:
 

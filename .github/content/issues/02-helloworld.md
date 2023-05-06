@@ -10,15 +10,11 @@ O objetivo desta etapa será introduzir alguns conceitos inicias sobre à lingua
 
 ### 1- Sobre Python
 
-- [ ] [**Caelum - O que é python**](https://www.caelum.com.br/apostila-python-orientacao-a-objetos/o-que-e-python#python)
+- [ ] Apresentação: [**A linguagem Python**](https://colab.research.google.com/drive/1eoPLaSiHm3RIa6SfbxeTYDHbSMVYqEUD?usp=sharing) 
 
-  Leitura dos Capítulos:
+- [ ] Leitura: [**Caelum - O que é python**](https://www.caelum.com.br/apostila-python-orientacao-a-objetos/o-que-e-python#python)
 
-  - 1_O que é Python
-  - 2_História
-  - 3_Interpretador
-
-- [ ] **Desafio**
+- [ ] **Desafio:**
 
   Faça o exercício "_00_Hello.py_" dentro da pasta "_Desafio 1_" do repositório que você clonou na sua máquina pessoal
 
@@ -26,14 +22,9 @@ O objetivo desta etapa será introduzir alguns conceitos inicias sobre à lingua
 
 ### 2- Variáveis e operadores
 
-- [ ] [**Caelum - Variáveis**](https://www.caelum.com.br/apostila-python-orientacao-a-objetos/declarando-e-usando-variaveis)
+- [ ] Apresentação: [**Variaveis e operadores em Python**]()
 
-  Leitura dos Capítulos:
-
-  - Tipos embutidos (built-ins)
-  - Variáveis
-  - Instruções
-  - Operadores Aritméticos
+- [ ]  Leitura: [**Caelum - Variáveis**](https://www.caelum.com.br/apostila-python-orientacao-a-objetos/declarando-e-usando-variaveis)
 
 - [ ] **Desafio**
 

@@ -1,5 +1,4 @@
 """
-Python é uma linguagem fortemente tipada que necessitam de operações de 
 cast em algumas operações
 
 """

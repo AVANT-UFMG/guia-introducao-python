@@ -10,13 +10,8 @@ Aprenda a trabalhar com listas e como usa-las através de loops
 
 ### 1- Loops
 
-- [ ] [**Curso Zeni- Laços de Repetição**](http://luiszeni.com.br/python_classes/chapters/cap03.html)
+- [ ] Apresentação: [**Curso Zeni- Laços de Repetição**](http://luiszeni.com.br/python_classes/chapters/cap03.html)
 
-  Leitura do curso aonde será abordado:
-
-  - while
-  - break
-  - for
 
 - [ ] **Desafio**
 
@@ -26,23 +21,10 @@ Aprenda a trabalhar com listas e como usa-las através de loops
 
 ### 2- Listas
 
-- [ ] [**Curso Zeni- Listas**](http://luiszeni.com.br/python_classes/chapters/cap04.html)
+- [ ]  Apresentação:  [**Curso Zeni- Listas**](http://luiszeni.com.br/python_classes/chapters/cap04.html)
 
-  Leitura do curso aonde será abordado:
+- [ ] Leitura: [**Notebook Kaggle - Listas**](https://www.kaggle.com/colinmorris/lists)
 
-  - Acesso a elementos
-  - Listas e laços de repetição
-  - Ordenação, Cópia e Remoção de listas
-  - Fatiamento de listas
-
-- [ ] [**Notebook Kaggle - Listas**](https://www.kaggle.com/colinmorris/lists)
-
-  Leitura do notebook aonde será abordado:
-
-  - Index
-  - Slicing
-  - Funções Listas
-  - Tuplas
 
 - [ ] **Desafio**
 

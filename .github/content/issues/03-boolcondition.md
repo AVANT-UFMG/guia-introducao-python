@@ -10,13 +10,7 @@ Aprenda os metódos condicionais para conseguir alterar o comportamento do seu c
 
 ### 1- Condicionais
 
-- [ ] [**Curso Zeni- Desvios Condicionais**](http://luiszeni.com.br/python_classes/chapters/cap02.html)
-
-  Leitura do curso aonde será abordado:
-
-  - Booleanos
-  - Condicionais e seus operadores
-  - Desvios
+- [ ] Apresentação: [**Curso Zeni- Desvios Condicionais**](http://luiszeni.com.br/python_classes/chapters/cap02.html)
 
 - [ ] **Desafio**
 
@@ -27,13 +21,8 @@ Aprenda os metódos condicionais para conseguir alterar o comportamento do seu c
 
 ### 2- Recursividade
 
-- [ ] [**Pense Python - Recursividade** ](https://penseallen.github.io/PensePython2e/05-cond-recur.html)
+- [ ] Apresentação: [**Pense Python - Recursividade** ](https://penseallen.github.io/PensePython2e/05-cond-recur.html)
 
-  Leitura dos Capítulos:
-
-  - 8_Recursividade
-  - 9_Diagramas da pilha para funções recursivas
-  - 10_Recursividade infinita
 
 - [ ] **Desafio**
 
